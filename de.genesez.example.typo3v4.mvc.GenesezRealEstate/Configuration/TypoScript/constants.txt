@@ -1,0 +1,26 @@
+plugin.tx_genesezrealestate {
+	persistence {
+		# cat=plugin.tx_genesezrealestate//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+	view {
+		# cat=plugin.tx_genesezrealestate/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:genesez_real_estate/Resources/Private/Templates/
+		# cat=plugin.tx_genesezrealestate/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:genesez_real_estate/Resources/Private/Partials/
+		# cat=plugin.tx_genesezrealestate/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:genesez_real_estate/Resources/Private/Layouts/
+	}
+	// PROTECTED REGION ID(constants.txt.own.plugin.typoscript.declaration.eee_1045467100313_135436_1) ENABLED START
+	settings {
+		# cat=plugin.tx_genesezrealestate//a; type=int+; label=Default single view PID
+		singleViewPid =
+		# cat=plugin.tx_genesezrealestate//a; type=int+; label=Default list view PID
+		listViewPid =
+	}
+	// PROTECTED REGION END
+}
+
+
+// PROTECTED REGION ID(constants.txt.own.typoscript.declaration.eee_1045467100313_135436_1) ENABLED START
+// PROTECTED REGION END
