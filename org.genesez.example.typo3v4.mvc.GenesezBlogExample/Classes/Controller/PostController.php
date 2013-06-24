@@ -37,13 +37,11 @@ class Tx_GszBlogExample_Controller_PostController extends Tx_GszBlogExample_Cont
 
 	/**
 	 * @var Tx_GszBlogExample_Domain_Repository_PostRepository
-	 * @inject
 	 */
 	protected $postRepository;
 	
 	/**
 	 * @var Tx_GszBlogExample_Domain_Repository_PersonRepository
-	 * @inject
 	 */
 	protected $personRepository;
 	
@@ -173,12 +171,32 @@ class Tx_GszBlogExample_Controller_PostController extends Tx_GszBlogExample_Cont
 	}
 	
 	/**
+	 * Dependency injection for postRepository
+	 *
+	 * @param Tx_GszBlogExample_Domain_Repository_PostRepository $postRepository 
+	 * @return void
+	 */
+	public function injectPostRepository(Tx_GszBlogExample_Domain_Repository_PostRepository $postRepository) {
+		$this->postRepository = $postRepository;
+	}
+	
+	/**
 	 * Getter for personRepository
 	 *
 	 * @return Tx_GszBlogExample_Domain_Repository_PersonRepository 
 	 */
 	public function getPersonRepository() {
 		return $this->personRepository;
+	}
+	
+	/**
+	 * Dependency injection for personRepository
+	 *
+	 * @param Tx_GszBlogExample_Domain_Repository_PersonRepository $personRepository 
+	 * @return void
+	 */
+	public function injectPersonRepository(Tx_GszBlogExample_Domain_Repository_PersonRepository $personRepository) {
+		$this->personRepository = $personRepository;
 	}
 	
 	/* PROTECTED REGION ID(php.class.own.code.implementation._16_9_8a7027a_1297251441697_732082_2744) ENABLED START */
