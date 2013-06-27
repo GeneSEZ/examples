@@ -1,9 +1,0 @@
-«REM»
-	example to demonstrate the AOP feature of XPand
-	
-	@author	tobias haubold
-	@date	2008-05-30
-«ENDREM»
-
-«REM» based on genesez meta model «ENDREM»
-«IMPORT gcore»
