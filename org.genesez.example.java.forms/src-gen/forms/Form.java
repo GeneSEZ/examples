@@ -5,8 +5,10 @@ package forms;
  * 	@FILE-ID : (_14_0_b6f02e1_1212580097593_990285_125) 
  */
 
+
 /**
  * Describes the common behavior of a geometrical forms
+ * @author dreamer
  */
 public interface Form extends Moveable, Rotateable, Paintable {
 	
@@ -23,6 +25,9 @@ public interface Form extends Moveable, Rotateable, Paintable {
 	 */
 	public boolean isCrossing(Form form);
 	
+	// -- generated code of other cartridges --------------------------------
+	
+	// -- own code implementation -------------------------------------------
 	/* PROTECTED REGION ID(java.interface.own.code.declaration._14_0_b6f02e1_1212580097593_990285_125) ENABLED START */
 	// TODO: put your own implementation code here
 	/* PROTECTED REGION END */
